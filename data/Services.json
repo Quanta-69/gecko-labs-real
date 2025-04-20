@@ -1,25 +1,31 @@
 [
     {
+        "icon":"",
         "title": "Custom Web Development",
         "description" : "Tailored websites built with human-crafted code, blending agility and innovation for a unique digital presence."
     },
     {
+        "icon":"",
         "title": "E-commerce Solutions",
         "description" : "Dynamic online stores with seamless payment integration, designed to scale and drive sales effortlessly."
     },
     {
+        "icon":"",
         "title": "AI-Powered Tools",
         "description" : "Intelligent features like chatbots and automation to enhance user experience and streamline workflows."
     },
     {
+        "icon":"",
         "title": "Responsive Design",
         "description" : "Pixel-perfect designs that adapt flawlessly to all devices, ensuring a smooth user experience everywhere."
     },
     {
+        "icon":"",
         "title": "SEO Optimization",
         "description" : "Boost your visibility on search engines with strategic optimization for higher rankings and organic traffic."
     },
     {
+        "icon":"",
         "title" : "Website Maintenance & Support",
         "description" : "Reliable updates, fixes, and performance tuning to keep your site secure, fast, and future-ready."
     }
