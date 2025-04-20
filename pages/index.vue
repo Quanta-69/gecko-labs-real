@@ -11,8 +11,7 @@
 
 <script setup lang="ts">
 
-import {  PSSection, HeroSection, PortfolioSection, ServicesSection, TestimonialsSection, CTASection } from '~/components/pages/HomePage';
-
+import { PSSection, HeroSection, PortfolioSection, ServicesSection, TestimonialsSection, CTASection } from '~/components/pages/HomePage';
 </script>
 
 <style scoped>

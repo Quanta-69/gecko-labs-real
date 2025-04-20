@@ -1,8 +1,8 @@
 <template>
     <div>
-        <CaseStudy/>
-        <Projects/>
-        <Testimonials/>
+        <Projects />
+        <CaseStudy />
+        <Testimonials />
     </div>
 </template>
 
