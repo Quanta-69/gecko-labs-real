@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Call To Action Section</h1>
-    </div>
+<section>
+    <h1>Call to action section</h1>
+</section>
 </template>
 
 <script setup lang="ts">

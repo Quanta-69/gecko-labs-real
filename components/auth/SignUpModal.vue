@@ -1,7 +1,7 @@
 <template>
-<section>
-    <h1>Conact Info (Should be small or can be removed)</h1>
-</section>
+    <div>
+
+    </div>
 </template>
 
 <script setup>

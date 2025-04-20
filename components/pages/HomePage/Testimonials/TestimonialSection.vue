@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Testimonial Section</h1>
-    </div>
+<section>
+    <h1>Testimonials Section (Animated faded ends)</h1>
+</section>
 </template>
 
 <script setup>

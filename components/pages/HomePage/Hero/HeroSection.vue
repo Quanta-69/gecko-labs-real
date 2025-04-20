@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Hero Section</h1>
-    </div>
+    <section>
+        <h1>Home Section</h1>
+    </section>
 </template>
 
 <script setup>

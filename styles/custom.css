@@ -1,6 +1,17 @@
 /* Tailwind is allowed */
-
+*{
+    transition: all .3s;
+}
 body{
-    background: var(--background);
-    color: var(--text);
+    background: var(--dark-bg);
+    color: var(--light-text);
+}
+header, section, footer{
+    max-width: 1500px;
+    @apply w-full mx-auto border
+}
+
+section{
+    /* min-height: 40vh; */
+    @apply my-4 p-4
 }

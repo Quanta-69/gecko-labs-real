@@ -37,7 +37,7 @@ html{
 }
 
 *{
-  transition: .3s ease;
+  transition: .3s all;
 }
 
 html::-webkit-scrollbar {

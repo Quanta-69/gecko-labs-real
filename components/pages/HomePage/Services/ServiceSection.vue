@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Services Section</h1>
-    </div>
+<section>
+    <h1>Service Section</h1>
+</section>
 </template>
 
 <script setup>
