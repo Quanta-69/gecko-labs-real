@@ -1,0 +1,60 @@
+/* All roots and default settings go here */
+/* Tailwind and @apply  is not allowed here */
+:root {
+  /* Fonts */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Lato', sans-serif;
+
+    /* Primary Colors */
+  --primary-light: #18E8D9; 
+  --primary-dark: #5C7FE9; 
+
+  /* Accent Color */
+  --accent: #FF6B35;        
+
+  /* Backgrounds */
+  --background: #F5F5F5;    /* Neutral Background */
+  --dark-bg: #121212;       /* Dark Background (for dark mode) */
+
+  /* Text Colors */
+  --text: #121212;          /* Dark Text */
+  --light-text: #E0E0E0; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+p, span, div, li, a {
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+*{
+  transition: .3s ease;
+}
+
+html::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+}
+html::-webkit-scrollbar-track {
+    background-color: #1a1a1a; /* Track color */
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #444; /* Thumb color */
+    border-radius: 6px; /* Rounded corners */
+}
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #666; /* Thumb color on hover */
+}
+/* Firefox scrollbar customization */
+html {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
+}
