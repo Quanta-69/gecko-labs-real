@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Amazing Work",
+    "description": "Gecko Web Labs delivered an exceptional website that exceeded our expectations. Their attention to detail and responsiveness was outstanding.",
+    "name": "Simran Panjwani",
+    "role": "CEO, Tech Innovators Inc.",
+    "img": "",
+    "avatar": ""
+  },
+  {
+    "title": "Highly Recommended",
+    "description": "The team at Gecko Web Labs is incredibly professional and creative. They transformed our vision into a stunning reality.",
+    "name": "Michael Davis",
+    "role": "Founder, Creative Minds Studio",
+    "img": "",
+    "avatar": ""
+  },
+  {
+    "title": "Impressive Results",
+    "description": "We saw significant improvements in user engagement after working with Gecko Web Labs. Their expertise is unmatched!",
+    "name": "Sarah Thompson",
+    "role": "Marketing Director, Global Solutions Corp.",
+    "img": "",
+    "avatar": ""
+  },
+  {
+    "title": "Exceptional Service",
+    "description": "From start to finish, Gecko Web Labs provided top-notch service. Their dedication to quality is evident in every project.",
+    "name": "Daniel Lee",
+    "role": "CTO, Digital Edge Technologies",
+    "img": "",
+    "avatar": ""
+  }
+]

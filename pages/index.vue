@@ -3,15 +3,14 @@
     <HeroSection />
     <ServicesSection />
     <PortfolioSection />
-    <PSSection />
-    <TestimonialsSection />
     <CTASection />
+    <TestimonialsSection />
 
 </template>
 
 <script setup lang="ts">
 
-import { PSSection, HeroSection, PortfolioSection, ServicesSection, TestimonialsSection, CTASection } from '~/components/pages/HomePage';
+import { HeroSection, PortfolioSection, ServicesSection, TestimonialsSection, CTASection } from '~/components/pages/HomePage';
 </script>
 
 <style scoped>

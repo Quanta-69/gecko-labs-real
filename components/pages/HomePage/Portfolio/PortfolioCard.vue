@@ -1,11 +1,19 @@
 <template>
-    <div>
-
+    <div class="project-card">
+        <img :src="image" :alt="image" />
+        <h3>{{ title }}</h3>
+        <p>{{ description }}</p>
+        <NuxtLink :to="link" class="cta-button" target="_blank" >live demo </NuxtLink>
     </div>
 </template>
 
 <script setup>
-
+defineProps({
+    title: String,
+    description: String,
+    image: String,
+    link: String,
+});
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

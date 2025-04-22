@@ -1,0 +1,26 @@
+[
+    {
+    "image":"https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/portfolio//1.jpg",
+    "title":"Project 1",
+    "description":"This project is a test from supabase run",
+    "link":"https://github.com"        
+    },
+    {
+    "image": "https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/portfolio//2.jpg",
+    "title": "Project 2",
+    "description": "This project is a test from supabase run",
+    "link": "https://github.com"
+    },
+    {
+    "image": "https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/portfolio//3.jpg",
+    "title": "Project 3",
+    "description": "This project is a test from supabase run",
+    "link": "https://github.com"
+    },
+    {
+    "image": "https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/portfolio//4.jpg",
+    "title": "Project 4",
+    "description": "This project is a test from supabase run",
+    "link": "https://github.com"
+    }
+]
