@@ -1,9 +1,10 @@
 <script setup>
 definePageMeta({
-    layout: 'auth', // Use the "auth" layout (if you have one)
+    layout: 'auth', // Optional: Use an "auth" layout
 });
 
-import { supabase } from '~/plugins/supabase'; // Import the Supabase client
+import { supabase } from '~/plugins/supabase';
+import { ref } from 'vue';
 
 const name = ref('');
 const email = ref('');
@@ -22,14 +23,11 @@ async function handleSignup() {
             email: email.value,
             password: password.value,
             options: {
-                data: { name: name.value }, // Store additional user data (e.g., name)
+                data: { name: name.value }, // Store additional user data
             },
         });
-
         if (error) throw error;
-
-        // Redirect to a verification page or dashboard
-        navigateTo('/verify-email'); // Optional: Create a verify-email page
+        navigateTo('/verify-email'); // Redirect to verify-email page
     } catch (err) {
         errorMessage.value = err.message || 'Failed to create account. Please try again.';
     }

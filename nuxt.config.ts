@@ -4,7 +4,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxtjs/supabase"],
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
 
   shadcn: {
     /**

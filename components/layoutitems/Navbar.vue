@@ -8,8 +8,8 @@
                 </li>
             </ul>
             <div class="btn-wrap">
-                <button>Login</button>
-                <button>Sign Up</button>
+                <NuxtLink  to="/auth/login"><button>Login</button></NuxtLink>
+                <NuxtLink to="/auth/signup" ><button>Sign Up</button></NuxtLink>
             </div>
         </nav>
     </header>

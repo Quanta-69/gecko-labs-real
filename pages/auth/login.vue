@@ -1,8 +1,10 @@
 <script setup>
 definePageMeta({
-    layout: 'auth', 
+    layout: 'auth', // Optional: Use an "auth" layout
 });
-import { supabase } from '~/plugins/supabase'; // Access Supabase client
+
+import { supabase } from '~/plugins/supabase';
+import { ref } from 'vue';
 
 const email = ref('');
 const password = ref('');
@@ -10,11 +12,22 @@ const errorMessage = ref('');
 
 async function handleLogin() {
     try {
-        const { error } = await supabase.auth.signInWithPassword({ email: email.value, password: password.value });
+        const { error } = await supabase.auth.signInWithPassword({
+            email: email.value,
+            password: password.value,
+        });
         if (error) throw error;
+        console.log('Login successful, redirecting to /dashboard...');
         navigateTo('/dashboard'); // Redirect to dashboard after login
     } catch (err) {
         errorMessage.value = err.message || 'Invalid credentials. Please try again.';
+    }
+
+    const { data, error } = await supabase.auth.getSession();
+    if (error) {
+        console.error('Error fetching session:', error);
+    } else {
+        console.log('Session data:', data);
     }
 }
 </script>
@@ -28,14 +41,13 @@ async function handleLogin() {
             <button type="submit">Login</button>
             <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
         </form>
-        <button @click="handleGoogleLogin">Sign in with Google</button>
         <p>Don't have an account? <NuxtLink to="/signup">Sign Up</NuxtLink>
         </p>
     </div>
 </template>
 
 <style scoped>
-/* .login-page {
+.login-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,6 +61,7 @@ input {
     padding: 0.5rem;
     width: 100%;
     max-width: 300px;
+    color: black;
 }
 
 button {
@@ -63,5 +76,5 @@ button {
 .error {
     color: red;
     margin-top: 0.5rem;
-} */
+}
 </style>
