@@ -2,11 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
 
-  loading: "~/layouts/loading.vue",
-
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", "@nuxtjs/supabase"],
 
   shadcn: {
     /**
@@ -60,10 +58,4 @@ export default defineNuxtConfig({
   },
 
   css: ["~/styles/default.css", "~/styles/custom.css"],
-
-  loading: {
-    color: "blue", // Color of the loading indicator
-    height: "5px", // Height of the loading indicator
-    duration: 5000, // Duration in ms before showing the loading indicator
-  },
 });

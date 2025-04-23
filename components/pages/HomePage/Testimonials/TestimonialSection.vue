@@ -18,7 +18,17 @@
 </template>
 
 <script setup>
-import testimonials from '~/data/Testimonials.json'
+const testimonials = ref([]);
+
+onMounted(async () => {
+    try {
+        const { data, error } = await supabase.from('Testimonials').select('*');
+        if (error) throw error;
+        testimonials.value = data; // Store fetched data in the `testimonials` ref
+    } catch (err) {
+        console.error('Error fetching testimonials:', err.message);
+    }
+});
 import TestimonialCard from './TestimonialCard.vue';
 </script>
 

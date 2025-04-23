@@ -7,6 +7,9 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+    middleware: 'auth', // Use the auth middleware
+});
 import { ChatSupport, PaymentHistory, ProjectProgress } from '~/components/pages/DashboardPage';
 import { useCustomMeta } from '~/composables/useMeta';
 
