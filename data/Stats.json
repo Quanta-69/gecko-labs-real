@@ -1,0 +1,26 @@
+[
+    {
+        "img_url":"",
+        "count":"20",
+        "title":"Projects Completed",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "img_url":"",
+        "count":"50",
+        "title":"Happy Clients",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "img_url":"",
+        "count":"100",
+        "title":"Cups of Coffee",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+        "img_url":"",
+        "count":"10",
+        "title":"Awards Won",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+]
