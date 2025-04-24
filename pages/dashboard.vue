@@ -7,6 +7,10 @@ const error = ref<string | null>(null);
 
 // Check session on page load and handle redirect
 onMounted(async () => {
+    if (typeof window !== 'undefined') { // ← Only runs in browser
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) navigateTo('/auth/login');
+    }
     try {
         const session = await checkAuth();
         if (!session) {
@@ -19,7 +23,7 @@ onMounted(async () => {
 
 const handleLogout = async () => {
     await supabase.auth.signOut();
-    return navigateTo('/'); // <- Key change: Skip middleware
+    window.location.href = '/'; // Hard redirect prevents loops
 };
 </script>
 

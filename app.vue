@@ -8,5 +8,7 @@
 </template>
 
 <script  setup>
-import Loader from '~/components/LoadingComponent.vue'
+supabase.auth.onAuthStateChange((event) => {
+    if (event === 'TOKEN_REFRESHED') console.log('Session extended!');
+});
 </script>
