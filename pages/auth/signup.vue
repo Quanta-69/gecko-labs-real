@@ -1,40 +1,27 @@
-<script setup>
-const supabase = useSupabase()
-const email = ref('')
-const password = ref('')
-const error = ref('')
+<script setup lang="ts">
+definePageMeta({
+    layout: "auth",
+});
+const email = ref < string > ("");
+const password = ref < string > ("");
+const error = ref < string | null > (null);
 
 const handleSignup = async () => {
-    error.value = ''
     try {
-        const { error: authError } = await supabase.auth.signUp({
+        const { data, error: authError } = await supabase.auth.signUp({
             email: email.value,
-            password: password.value
-        })
-
-        if (authError) throw authError
-        navigateTo('/dashboard')
+            password: password.value,
+        });
+        if (authError) throw authError;
+        navigateTo("/dashboard"); // or /login for email confirmation
     } catch (err) {
-        error.value = err.message.includes('already registered')
-            ? 'Email already in use'
-            : 'Signup failed'
-    }
-}
+        error.value = err instanceof Error ? err.message : "An unknown error occurred";    }
+};
 </script>
 
 <template>
-    <div class="auth-page">
-        <form @submit.prevent="handleSignup">
-            <input v-model="email" type="email" placeholder="Email" required>
-            <input v-model="password" type="password" placeholder="Password" required>
-
-            <div v-if="error" class="error">{{ error }}</div>
-
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+    <input v-model="email" type="email" placeholder="Email" />
+    <input v-model="password" type="password" placeholder="Password" />
+    <button @click="handleSignup">Sign Up</button>
+    <p v-if="error">{{ error }}</p>
 </template>
-
-<style scoped>
-/* Same styles as login.vue */
-</style>

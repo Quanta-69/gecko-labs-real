@@ -1,18 +1,9 @@
 export default defineNuxtRouteMiddleware(async (to) => {
-  const supabase = useSupabase();
+  // Skip auth check for these routes
+  if (["/", "/auth/login", "/auth/signup"].includes(to.path)) return;
+
   const {
     data: { session },
   } = await supabase.auth.getSession();
-
-  // Public routes
-  const publicRoutes = [
-    "/",
-    "/auth/login",
-    "/auth/signup",
-    "/auth/forgot-password",
-  ];
-
-  if (!session && !publicRoutes.includes(to.path)) {
-    return navigateTo("/auth/login");
-  }
+  if (!session) return navigateTo("/auth/login");
 });
