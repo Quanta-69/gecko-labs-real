@@ -51,12 +51,14 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
           rel: "stylesheet",
-          href: "rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&family=Lato:wght@400;700&display=swap' ",
-        },
+/*           href: "rel: 'stylesheet', href: '' ",
+ */        },
       ],
     },
   },
 
   css: ["~/styles/default.css", "~/styles/custom.css"],
-
+  routeRules: {
+    "/auth/**": { ssr: false }, // Client-side only
+  },
 });
