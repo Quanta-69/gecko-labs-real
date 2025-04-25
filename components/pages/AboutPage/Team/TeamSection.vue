@@ -22,7 +22,7 @@ onMounted(async () => {
         if (error) throw error;
         teams.value = data; // Store fetched data in the `testimonials` ref
     } catch (err) {
-        console.error('Error fetching testimonials:', err.message);
+        console.error('Error fetching teams:', err.message);
     }
 });
 </script>

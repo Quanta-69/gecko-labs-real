@@ -20,4 +20,9 @@ defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.card-svg{
+    height: 50px;
+    width: 50px;
+}
+</style>

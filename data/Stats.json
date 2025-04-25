@@ -1,24 +1,24 @@
 [
     {
-        "img_url":"",
+        "img_url":"https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/stats//1.jpg",
         "count":"20",
         "title":"Projects Completed",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        "img_url":"",
+        "img_url":"https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/stats//2.jpg",
         "count":"50",
         "title":"Happy Clients",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        "img_url":"",
+        "img_url":"https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/stats//3.jpg",
         "count":"100",
         "title":"Cups of Coffee",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-        "img_url":"",
+        "img_url":"https://cdymuoxmlskkcyfvulpa.supabase.co/storage/v1/object/public/stats//4.jpg",
         "count":"10",
         "title":"Awards Won",
         "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

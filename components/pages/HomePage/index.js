@@ -5,3 +5,4 @@ export { default as TestimonialsSection } from "./Testimonials/TestimonialSectio
 export { default as CTASection } from "./CTA/CTASection.vue";
 export { default as PSSection } from "./PricingSummary/PSSection.vue";
 export { default as CISection } from "./ContactInfo/CISection.vue";
+export {default as FaqSection} from "./FAQ/FAQSection.vue";

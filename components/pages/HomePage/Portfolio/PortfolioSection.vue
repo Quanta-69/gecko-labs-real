@@ -20,7 +20,20 @@
 
 <script setup>
 import PortfolioCard from './PortfolioCard.vue';
-import projects from '~/data/Portfolio.json';
+const projects = ref([]);
+
+onMounted(async () => {
+    try {
+        const { data, error } = await supabase
+            .from('Projects')
+            .select('*')
+            .limit(3);
+        if (error) throw error;
+        projects.value = data; // Store fetched data in the `testimonials` ref
+    } catch (err) {
+        console.error('Error fetching projects:', err.message);
+    }
+});
 </script>
 
 <style lang="scss" scoped></style>

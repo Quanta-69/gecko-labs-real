@@ -12,7 +12,7 @@
                 </div>
             </div>
         </div>
-        <div class="img">{{ img }}</div>
+        <div class="img"><img :src=img alt=""></div>
     </div>
 </template>
 
@@ -32,5 +32,14 @@ svg{
     height: 40px;
     width: 40px;
     color: red;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.img{
+    width: 300px;
+    height: 300px;
 }
 </style>

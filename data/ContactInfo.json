@@ -1,0 +1,22 @@
+[
+    {
+        "icon":"",
+        "title":"Address",
+        "description":"Somewhere on planet earth"
+    },
+    {
+      "icon": "",
+      "title": "Call Us",
+      "description": "000-0000-0000"
+    },
+    {
+      "icon": "",
+      "title": "Open Hours",
+      "description": "9am to 5pm weekdays"
+    },
+    {
+      "icon": "",
+      "title": "Message Us",
+      "description": "geckoweblabs@support.com"
+    }
+]

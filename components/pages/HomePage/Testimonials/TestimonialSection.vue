@@ -13,6 +13,10 @@
         :role="testimonial.role"
         :img="testimonial.img"
          />
+
+        <div class="btn-wrap">
+            <NuxtLink to="/portfolio" ><button>See all Testimonials</button></NuxtLink>
+        </div>
     </div>
 </section>
 </template>
@@ -22,7 +26,10 @@ const testimonials = ref([]);
 
 onMounted(async () => {
     try {
-        const { data, error } = await supabase.from('Testimonials').select('*');
+        const { data, error } = await supabase
+            .from('Testimonials')
+            .select('*')
+            .limit(3);
         if (error) throw error;
         testimonials.value = data; // Store fetched data in the `testimonials` ref
     } catch (err) {

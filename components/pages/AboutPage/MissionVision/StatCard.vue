@@ -16,6 +16,9 @@ defineProps({
 })
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+img{
+    height: 300px;
+    width: 300px;
+}
 </style>
