@@ -14,8 +14,8 @@
                     :link="project.link"
                 />
                 <div class="btn-wrap">
-                    <NuxtLink to="/portfolio.vue" ><button>See All Projects</button></NuxtLink>
-                    <NuxtLink to="/dashboard.vue" ><button>I want a Website</button></NuxtLink>
+                    <NuxtLink to="/portfolio" ><button>See All Projects</button></NuxtLink>
+                    <NuxtLink to="/dashboard" ><button>I want a Website</button></NuxtLink>
                 </div>
             </div>
         </section>

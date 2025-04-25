@@ -6,12 +6,18 @@ body{
     background: var(--dark-bg);
     color: var(--light-text);
 }
-header, section, footer{
+header, .wrapper, footer{
     max-width: 1500px;
     @apply w-full mx-auto border
 }
 
 section{
-    /* min-height: 40vh; */
-    @apply my-4 p-4
+    min-height: 40vh;
+    @apply border p-4 flex flex-col items-start justify-center
+}
+.btn-wrap{
+    @apply flex justify-center items-center border gap-4
+}
+button{
+    @apply   px-4 py-1 rounded-md border
 }
