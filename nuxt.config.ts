@@ -20,7 +20,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Gecko Web Labs - Agile Web Development",
+      title: "Gecko Web Labs - AI Precision. Human Touch. Perfect Websites",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -51,8 +51,9 @@ export default defineNuxtConfig({
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
         {
           rel: "stylesheet",
-/*           href: "rel: 'stylesheet', href: '' ",
- */        },
+          /*           href: "rel: 'stylesheet', href: '' ",
+           */
+        },
       ],
     },
   },

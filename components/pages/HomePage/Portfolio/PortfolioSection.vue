@@ -12,7 +12,11 @@
                     :title="project.title"
                     :description="project.description"
                     :link="project.link"
-                    />
+                />
+                <div class="btn-wrap">
+                    <NuxtLink to="/portfolio.vue" ><button>See All Projects</button></NuxtLink>
+                    <NuxtLink to="/dashboard.vue" ><button>I want a Website</button></NuxtLink>
+                </div>
             </div>
         </section>
     </section>
