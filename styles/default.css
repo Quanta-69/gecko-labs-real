@@ -62,3 +62,6 @@ html {
     scrollbar-width: thin; /* Thin scrollbar */
     scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
 }
+::selection{
+  background: var(--primary-dark);
+}
