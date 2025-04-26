@@ -38,6 +38,7 @@ p, span, div, li, a {
 html{
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
+  transition: all 3s !important;
 }
 
 *{
