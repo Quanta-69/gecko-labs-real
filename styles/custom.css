@@ -1,6 +1,6 @@
 /* Tailwind is allowed */
 *{
-    transition: all .3s;
+    transition: all .3s !important;
 }
 body{
     background: var(--dark-bg);
@@ -16,8 +16,5 @@ section{
     @apply border p-4 flex flex-col items-start justify-center
 }
 .btn-wrap{
-    @apply flex justify-center items-center border gap-4
-}
-button{
-    @apply   px-4 py-1 rounded-md border
+    @apply flex justify-center items-center border gap-8
 }

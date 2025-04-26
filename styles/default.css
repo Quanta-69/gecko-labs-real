@@ -15,11 +15,11 @@
   --accent: #FF6B35;        
 
   /* Backgrounds */
-  --background: #F5F5F5;    /* Neutral Background */
+  --light-bg: #F5F5F5;    /* Neutral Background */
   --dark-bg: #121212;       /* Dark Background (for dark mode) */
 
   /* Text Colors */
-  --text: #121212;          /* Dark Text */
+  --dark-text: #121212;          /* Dark Text */
   --light-text: #E0E0E0; 
 }
 input{
@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, span, div, li, a {
   font-family: var(--font-body);
-  font-weight: 400;
+  @apply font-semibold
 }
 
 html{
