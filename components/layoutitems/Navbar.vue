@@ -43,14 +43,16 @@ onBeforeUnmount(() => {
     @apply text-[var(--primary-light)];
 }
 .scrolled{
-    background-color: rgba(0, 0, 0, 0.106);
+    background-color: rgba(0, 0, 0, 0.5);
     max-width: 100vw;
+    backdrop-filter: blur(10px);
 }
-.static{/*for the future he he*/}
+.static{
+}
 
 header{
     backdrop-filter: blur(10px);
-    @apply shadow-md p-4 fixed top-0 left-0 right-0 z-10 border-b border-0 border-slate-500;
+    @apply sticky top-0 left-0 right-0 shadow-md p-4 z-10 border-b border-0 border-slate-500;
 }
 nav{
     @apply flex justify-between items-center

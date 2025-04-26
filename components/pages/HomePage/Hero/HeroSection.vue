@@ -31,6 +31,7 @@ section {
     min-height: 100vh;
     background: url(~/static/hero.jpg) no-repeat fixed center/cover;
     border-image: fill 0 linear-gradient(to right, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.515));
+    @apply py-0
 }
 
 .wrapper {
@@ -74,7 +75,7 @@ h1 {
         @apply text-[var(--primary-light)] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary-light)] to-[var(--primary-dark)];
     }
 
-    @apply text-6xl font-bold text-center;
+    @apply text-6xl font-bold text-center text-gray-400;
 }
 
 h2 {

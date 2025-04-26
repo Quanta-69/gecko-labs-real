@@ -1,15 +1,17 @@
 <template>
     <section>
-        <h1 class="sect-intro">What We Offer</h1>
+        <h1 class="sect-intro">Services We Offer</h1>
         <p class="sect-desc"> Agile web development, innovative solutions, and human-crafted code—tailored to your unique needs.</p>
         <div class="wrapper">
-            <ServiceCard 
-                v-for="(service, index) in services"
-                :key="index"
-                :icon="service.icon"
-                :title="service.title"
-                :description="service.description"
+            <div class="card-wrap">
+                <ServiceCard
+                    v-for="(service, index) in services"
+                    :key="index"
+                    :icon="service.icon"
+                    :title="service.title"
+                    :description="service.description"
                 />
+            </div>
         </div>
     </section>
 </template>
@@ -19,4 +21,10 @@ import ServiceCard from './ServiceCard.vue';
 import services  from '~/data/Services.json';
 </script>
 
-<style scoped></style>
+<style scoped>
+section{
+    background: url(~/static/service.jpg) no-repeat fixed center/cover;
+    border-image: fill 0 linear-gradient(to right, rgba(0, 0, 0, 0.728), rgba(0, 0, 0, 0.517));
+
+}
+</style>

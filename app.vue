@@ -1,7 +1,7 @@
 <template>
-    <div data-scroll-container>
+    <div>
         <NuxtLayout>
-            <NuxtPage data-scroll-section/>
+            <NuxtPage/>
         </NuxtLayout>
     </div>
 </template>
@@ -10,6 +10,5 @@
 supabase.auth.onAuthStateChange((event) => {
     if (event === 'TOKEN_REFRESHED') console.log('Session extended!');
 });
-import useSmoothScroll from '~/composables/useSmoothScroll'
-useSmoothScroll()
+
 </script>

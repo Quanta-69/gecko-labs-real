@@ -43,7 +43,7 @@ export default defineNuxtConfig({
           content:
             "Crafting agile, innovative websites with human-crafted code and AI efficiency.",
         },
-        { property: "og:image", content: "/images/gecko-labs-banner.png" },
+        { property: "og:image", content: "/static/hero.jpg" },
         { property: "og:url", content: "https://www.geckoweblabs.com" },
         { property: "og:type", content: "website" },
       ],

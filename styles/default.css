@@ -17,6 +17,7 @@
   /* Backgrounds */
   --light-bg: #F5F5F5;    /* Neutral Background */
   --dark-bg: #121212;       /* Dark Background (for dark mode) */
+  --alpha-white: rgba(255, 255, 255, 0.106);
 
   /* Text Colors */
   --dark-text: #121212;          /* Dark Text */

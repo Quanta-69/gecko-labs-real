@@ -21,8 +21,22 @@ defineProps({
 </script>
 
 <style scoped>
+.card {
+    backdrop-filter: blur(10px);
+    background:var(--alpha-white);
+    @apply gap-4 border border-slate-500
+}
+h3{
+    @apply text-2xl 
+}
+p{
+    @apply text-gray-300
+}
 .card-svg{
-    height: 50px;
-    width: 50px;
+    *{
+        @apply fill-[var(--dark-text)]
+    }
+    background: linear-gradient(45deg, var(--primary-light), var(--primary-dark));
+ @apply w-12 h-12 p-2 rounded-full;
 }
 </style>

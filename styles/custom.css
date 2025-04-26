@@ -3,7 +3,7 @@
     transition: all .3s !important;
 }
 body{
-    background: var(--dark-bg);
+    background: black;
     color: var(--light-text);
 }
 header, .wrapper, footer{
@@ -12,7 +12,24 @@ header, .wrapper, footer{
 }
 section{
     min-height: 40vh;
-    @apply border p-4 flex flex-col items-start justify-center
+    @apply border px-4 py-12 flex flex-col items-start justify-center
+}
+.wrapper{
+    @apply rounded-lg border 
+}
+.card-wrap{
+    .card{
+        max-width: 430px;
+        @apply  w-full shadow-md rounded-lg p-4 flex flex-col items-start justify-center
+    }
+    @apply flex gap-10 items-center justify-center flex-wrap
+}
+
+.sect-intro{
+    @apply mx-auto border text-5xl font-bold my-4 text-center text-[var(--primary-light)] bg-clip-text text-transparent bg-gradient-to-t from-[var(--primary-light)] to-[var(--primary-dark)];
+}
+.sect-desc{
+    @apply mx-auto font-semibold text-xl italic my-4 text-center
 }
 .btn-wrap{
     @apply flex justify-center items-center border gap-8

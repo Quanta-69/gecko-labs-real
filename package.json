@@ -14,7 +14,6 @@
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@supabase/supabase-js": "^2.49.4",
     "cookie-universal-nuxt": "^2.2.2",
-    "locomotive-scroll": "^4.1.4",
     "nuxt": "^3.16.2",
     "shadcn-nuxt": "^2.0.1",
     "spinkit": "^2.0.1",
