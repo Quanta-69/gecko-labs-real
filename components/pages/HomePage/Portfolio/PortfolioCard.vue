@@ -3,7 +3,7 @@
         <img :src="image" :alt="image" />
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
-        <NuxtLink :to="link" class="cta-button" target="_blank" >
+        <NuxtLink :to="`https://`+link" class="cta-button" target="_blank" >
             <GeckoButton icon="ext_link" text="live demo" variant="secondary"/>
         </NuxtLink>
     </div>
@@ -26,10 +26,10 @@ h3, p, a{
     @apply ps-2
 }
 h3{
-    @apply uppercase 
+    @apply uppercase text-[var(--accent)]
 }
 p{
-    @apply text-sm
+    @apply text-[var(--gray-text)]
 }
 img{
     height: 330px;
@@ -38,7 +38,7 @@ img{
     filter: grayscale(1);
     border-radius: 30px;
 }
-.card:hover img{
+img:hover{
     filter: grayscale(0);
 }
 </style>

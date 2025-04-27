@@ -15,8 +15,8 @@
                 </div>
             </div>
             <div class="btn-wrap">
-                <GeckoButton icon="heart" @click="navigateTo('/dashboard')" text="I want a Website" size="md" />
-                <GeckoButton icon="bookmark" @click="navigateTo('/portfolio')" text="Explore Projects" size="md" variant="secondary" />
+                <GeckoButton icon="heart" @click="navigateTo('/dashboard')" text="I want a website" size="md" />
+                <GeckoButton icon="bookmark" @click="navigateTo('/portfolio')" text="Explore projects" size="md" variant="secondary" />
             </div>
         </div>
     </section>
@@ -72,10 +72,10 @@ section {
 h1 {
     span {
         font-family: var(--font-heading);
-        @apply text-[var(--primary-light)] font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary-light)] to-[var(--primary-dark)];
+        @apply  bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary-light)] to-[var(--primary-dark)];
     }
 
-    @apply text-6xl font-bold text-center text-gray-400;
+    @apply text-6xl font-bold text-center text-[var(--gray-text)];
 }
 
 h2 {
