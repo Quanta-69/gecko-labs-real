@@ -24,7 +24,7 @@ defineProps({
 .card {
     backdrop-filter: blur(10px);
     background:var(--alpha-white);
-    @apply gap-4 border border-slate-500
+    @apply border border-slate-500
 }
 h3{
     @apply text-2xl 

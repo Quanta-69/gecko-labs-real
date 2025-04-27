@@ -62,8 +62,9 @@ const currentIcon = computed(() => {
 
 <style scoped>
 button {
+    gap: 4px;
     transition: all .2s !important;
-    @apply flex items-center justify-center gap-2
+    @apply flex items-center justify-center 
 }
 
 .base-btn-styles {
@@ -72,7 +73,8 @@ button {
 
 /* Variants */
 .btn-primary {
-    @apply bg-[var(--primary-dark)] text-[var(--light-text)] hover:bg-[var(--light-text)] hover:text-[var(--primary-dark)];
+    background: linear-gradient(50deg, var(--primary-light), var(--primary-dark));
+    @apply text-[var(--light-text)];
 }
 
 .btn-secondary {

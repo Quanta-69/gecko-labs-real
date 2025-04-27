@@ -2,23 +2,21 @@
     <section>
         <h1 class="sect-intro">Featured Projects</h1>
         <p class="sect-desc">We build agile, innovative websites tailored to your needs. Explore our featured projects below.</p>
-
-        <section>
             <div class="wrapper">
-                <PortfolioCard 
-                    v-for="(project, index) in projects"
-                    :key="index"
-                    :image="project.image"
-                    :title="project.title"
-                    :description="project.description"
-                    :link="project.link"
-                />
+                <div class="card-wrap">
+                    <PortfolioCard
+                        v-for="(project, index) in projects"
+                        :key="index"
+                        :image="project.image"
+                        :title="project.title"
+                        :description="project.description"
+                        :link="project.link"/>
+                </div>
                 <div class="btn-wrap">
                     <NuxtLink to="/portfolio" ><button>See All Projects</button></NuxtLink>
                     <NuxtLink to="/dashboard" ><button>I want a Website</button></NuxtLink>
                 </div>
             </div>
-        </section>
     </section>
 </template>
 
@@ -40,4 +38,8 @@ onMounted(async () => {
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.btn-wrap{
+    @apply my-10
+}
+</style>
