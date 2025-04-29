@@ -40,7 +40,7 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .router-link-active{
-    @apply text-[var(--primary-light)];
+    @apply text-[var(--200)];
 }
 .scrolled{
     background-color: rgba(0, 0, 0, 0.5);

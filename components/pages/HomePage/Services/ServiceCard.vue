@@ -36,7 +36,7 @@ p{
     *{
         @apply fill-[var(--dark-text)]
     }
-    background: linear-gradient(45deg, var(--primary-light), var(--primary-dark));
+    background: linear-gradient(45deg, var(--100), var(--300));
  @apply w-12 h-12 p-2 rounded-full;
 }
 </style>

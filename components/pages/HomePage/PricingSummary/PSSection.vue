@@ -33,6 +33,9 @@ onMounted(async () => {
 });
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+section{
+    background: url(/static/portfolio.jpg) no-repeat fixed center/cover;
+    border-image: fill 0 linear-gradient(to right, rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.515));
+}
 </style>

@@ -36,7 +36,7 @@ onMounted(async () => {
 
 <style scoped>
 section{
-    @apply bg-[var(--dark-bg)]
+    
 }
 .card-wrap{
     @apply flex-nowrap overflow-x-auto

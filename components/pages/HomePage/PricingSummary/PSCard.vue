@@ -1,22 +1,22 @@
 <template>
-    <div class="card">
-        <div class="text-content">
-            <div>
-                <h1 class="name">{{ name }}</h1>
-                <p class="role">{{ tier }}</p>
+    <div class="border">
+        <div class="card">
+            <div class="text-content">
+                <div class="tag-flex">
+                    <h1 class="name">{{ name }}</h1>
+                    <p class="tier">{{ tier }}</p>
+                </div>
+                <p class="desc">{{ description }}</p>
+                <ul>
+                    <li v-for="(highlight, index) in highlights" :key="index">
+                        {{ highlight }}
+                    </li>
+                </ul>
+                <p class="price"><span>${{ starting_price }}</span></p>
+                <GeckoButton @click="navigateTo('/dashboard')" :text=cta_text variant="secondary" icon="ext_link" />
             </div>
-            <p class="desc">{{ description }}</p>
-            <ul>
-                <li v-for="(highlight, index) in highlights" :key="index">
-                    {{ highlight }}
-                </li>
-            </ul>
-            <p class="price">${{ starting_price }}</p>
-            <NuxtLink to="/dashboard" >
-                <button>{{ cta_text }}</button>
-            </NuxtLink>
+            <div class="img"><img :src=thumbnail alt="Offer Image"></div>
         </div>
-        <div class="img"><img :src=thumbnail alt=""></div>
     </div>
 </template>
 
@@ -35,11 +35,37 @@ defineProps({
 
 <style scoped>
 .card{
-    @apply max-w-[550px] border flex-row bg-slate-600
+    background: var(--alpha-white);
+    backdrop-filter: blur(10px);
+    @apply max-w-[550px]  flex-row items-center
+}
+.text-content{
+    @apply flex flex-col justify-center h-full  gap-4
+}
+.tag-flex{
+        .tier {
+            @apply text-sm  rounded-lg px-3 py-1.5 bg-[var(--accent)] text-[var(--dark-text)];
+        }
+        .name{
+            @apply text-2xl 
+        }
+    @apply flex gap-6
+}
+.desc{
+    @apply text-lg text-gray-400
+}
+ul{
+    @apply list-disc pl-5 text-[var(--200)]
+}
+p{
+    span{
+        @apply text-2xl text-[var(--100)] pl-1 
+    }
 }
 img{
-    height: 300px;
-    width: 300px;
+    height: 330px;
+    width: 250px;
     object-fit: cover;
+    border-radius: 30px;
 }
 </style>

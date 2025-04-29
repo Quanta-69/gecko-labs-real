@@ -26,7 +26,7 @@ h3, p, a{
     @apply ps-2
 }
 h3{
-    @apply uppercase text-[var(--accent)]
+    @apply uppercase text-xl text-transparent bg-clip-text bg-gradient-to-r from-[var(--100)] to-[var(--200)] font-bold
 }
 p{
     @apply text-[var(--gray-text)]

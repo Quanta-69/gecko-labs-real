@@ -72,6 +72,6 @@ html {
     scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
 }
 ::selection{
-  background: var(--primary-dark);
+  background: var(--300);
   color: white;
 }
