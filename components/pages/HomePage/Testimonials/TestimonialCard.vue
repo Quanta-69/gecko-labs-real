@@ -28,18 +28,47 @@ defineProps({
 </script>
 
 <style scoped>
+.card{
+    backdrop-filter: blur(10px);
+    @apply flex-col-reverse border gap-0 max-w-[max-content] p-0 border-gray-400 bg-[var(--alpha-white)]
+}
+.text-content{
+    @apply max-w-[500px] flex flex-col gap-3 p-4
+}
+h1{
+    @apply text-2xl text-[var(--100)]
+}
+p{
+    @apply text-gray-400
+}
+.profile{
+    h4{
+        @apply text-gray-400
+    }
+    @apply flex gap-4 items-center
+}
 svg{
     height: 40px;
     width: 40px;
-    color: red;
+    color: var(--200);
 }
 .avatar{
+    img{
+        border-radius: 50%;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 .img{
-    width: 300px;
+    img{
+        border-radius: 30px;
+        object-fit: cover;
+    }
+    width: 500px;
     height: 300px;
 }
 </style>
