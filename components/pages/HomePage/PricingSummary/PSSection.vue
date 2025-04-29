@@ -1,22 +1,18 @@
 <template>
-<section>
-    <h1 class="sect-intro">Websites We Offer</h1>
-    <p class="sect-desc">These are the types of websites we can provide you. More coming soon...</p>
-    <div class="wrapper">
-        <PSCard v-for="(product, index) in products" :key="index"
-        :name="product.name"
-        :tier="product.tier"
-        :description="product.description"
-        :highlights="product.highlights"
-        :starting_price="product.starting_price"
-        :cta_text="product.cta_text"
-        :thumbnail="product.thumbnail"
-        />
-        <NuxtLink to="/pricing" >
-            <button>See All Tiers</button>
-        </NuxtLink>
-    </div>
-</section>
+    <section>
+        <h1 class="sect-intro">Websites Crafted for Your Needs</h1>
+        <p class="sect-desc">From e-commerce to portfolios, we bring your vision to life.</p>
+        <div class="wrapper">
+            <div class="card-wrap">
+                <PSCard v-for="(product, index) in products" :key="index" :name="product.name" :tier="product.tier"
+                    :description="product.description" :highlights="product.highlights"
+                    :starting_price="product.starting_price" :cta_text="product.cta_text" :thumbnail="product.thumbnail" />
+            </div>
+            <div class="btn-wrap">
+                <GeckoButton @click="navigateTo('/pricing')" variant="secondary" size="md" text="See All Tiers" icon="ext_link" />
+            </div>
+        </div>
+    </section>
 </template>
 
 <script setup>

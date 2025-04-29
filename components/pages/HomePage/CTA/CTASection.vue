@@ -2,7 +2,7 @@
     <section>
         <div class="wrapper">
             <div class="text-content">
-                <h1>Ready to Build Something Amazing?</h1>
+                <h1>Take the Next Step With Us</h1>
                 <p>We’re here to help you create a website that works as hard as you do.</p>
                 <div class="btn-content">
                     <NuxtLink>

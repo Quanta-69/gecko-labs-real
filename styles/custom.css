@@ -26,7 +26,7 @@ section{
 }
 
 .sect-intro{
-    @apply mx-auto border text-5xl font-bold mb-4 text-center text-[var(--primary-light)] bg-clip-text text-transparent bg-gradient-to-t from-[var(--primary-light)] to-[var(--primary-dark)];
+    @apply mx-auto border text-4xl font-bold mb-1 text-center bg-clip-text text-transparent bg-gradient-to-r from-[var(--100)] to-[var(--200)];
 }
 .sect-desc{
     @apply mx-auto font-semibold text-xl italic my-4 text-center

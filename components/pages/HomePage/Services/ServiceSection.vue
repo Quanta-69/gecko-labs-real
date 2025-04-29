@@ -1,16 +1,11 @@
 <template>
     <section>
-        <h1 class="sect-intro">Services We Offer</h1>
-        <p class="sect-desc"> Agile web development, innovative solutions, and human-crafted code—tailored to your unique needs.</p>
+        <h1 class="sect-intro">Empowering Your Digital Journey</h1>
+        <p class="sect-desc">A suite of offerings to meet your needs.</p>
         <div class="wrapper">
             <div class="card-wrap">
-                <ServiceCard
-                    v-for="(service, index) in services"
-                    :key="index"
-                    :icon="service.icon"
-                    :title="service.title"
-                    :description="service.description"
-                />
+                <ServiceCard v-for="(service, index) in services" :key="index" :icon="service.icon"
+                    :title="service.title" :description="service.description" />
             </div>
         </div>
     </section>

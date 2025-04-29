@@ -1,22 +1,17 @@
 <template>
     <section>
-        <h1 class="sect-intro">Latest Projects</h1>
-        <p class="sect-desc">We build agile, innovative websites tailored to your needs. Explore our featured projects below.</p>
-            <div class="wrapper">
-                <div class="card-wrap">
-                    <PortfolioCard
-                        v-for="(project, index) in projects"
-                        :key="index"
-                        :image="project.image"
-                        :title="project.title"
-                        :description="project.description"
-                        :link="project.link"/>
-                </div>
-                <div class="btn-wrap">
-                    <NuxtLink to="/portfolio"><GeckoButton variant="ghost" text="See all projects" icon="bookmark" size="md" /></NuxtLink>
-                    <NuxtLink to="/dashboard"><GeckoButton variant="primary" text="I want a website" icon="heart" size="md" /></NuxtLink>
-                </div>
+        <h1 class="sect-intro">Showcasing Our Expertise</h1>
+        <p class="sect-desc">Explore our diverse portfolio of successful projects.</p>
+        <div class="wrapper">
+            <div class="card-wrap">
+                <PortfolioCard v-for="(project, index) in projects" :key="index" :image="project.image"
+                    :title="project.title" :description="project.description" :link="project.link" />
             </div>
+            <div class="btn-wrap">
+                <GeckoButton @click="navigateTo('/portfolio')" variant="ghost" text="See all projects" icon="bookmark" size="md" />
+                <GeckoButton @click="navigateTo('/pricing')" variant="primary" text="I want a website" icon="heart" size="md" />
+            </div>
+        </div>
     </section>
 </template>
 

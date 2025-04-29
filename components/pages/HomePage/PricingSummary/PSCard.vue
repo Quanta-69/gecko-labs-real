@@ -34,8 +34,12 @@ defineProps({
 </script>
 
 <style scoped>
+.card{
+    @apply max-w-[550px] border flex-row bg-slate-600
+}
 img{
     height: 300px;
     width: 300px;
+    object-fit: cover;
 }
 </style>

@@ -3,6 +3,12 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');*/
 :root {
+  --100:#BDEE98;
+  --200:#46DFB1;
+  --300:#09D1C7;
+  --400:#15919B;
+  --500:#0C647B;
+  --600:#213A58;
   /* Fonts */
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Lato', sans-serif;

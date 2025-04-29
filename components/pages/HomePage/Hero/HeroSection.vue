@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="btn-wrap">
-                <GeckoButton icon="heart" @click="navigateTo('/dashboard')" text="I want a website" size="md" />
+                <GeckoButton icon="heart" @click="navigateTo('/pricing')" text="I want a website" size="md" />
                 <GeckoButton icon="bookmark" @click="navigateTo('/portfolio')" text="Explore projects" size="md" variant="secondary" />
             </div>
         </div>
@@ -51,7 +51,7 @@ section {
         @apply w-8 h-8;
 
         * {
-            @apply fill-[var(--accent)];
+            @apply fill-[var(--100)];
         }
     }
 
@@ -63,7 +63,7 @@ section {
         }
 
         p {
-            @apply text-lg text-[var(--primary-light)] font-semibold;
+            @apply text-lg text-[var(--200)] font-semibold;
             ;
         }
     }
@@ -72,7 +72,7 @@ section {
 h1 {
     span {
         font-family: var(--font-heading);
-        @apply  bg-clip-text text-transparent bg-gradient-to-r from-[var(--primary-light)] to-[var(--primary-dark)];
+        @apply  bg-clip-text text-transparent bg-gradient-to-r from-[var(--100)] to-[var(--200)];
     }
 
     @apply text-6xl font-bold text-center text-[var(--gray-text)];
@@ -80,10 +80,6 @@ h1 {
 
 h2 {
     @apply text-3xl font-semibold italic;
-}
-
-p {
-    @apply text-xl text-[var(--primary-light)];
 }
 
 .btn-wrap {

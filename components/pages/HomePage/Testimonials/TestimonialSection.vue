@@ -1,24 +1,17 @@
 <template>
-<section>
-    <h1 class="sect-intro">What Our Clients Say About Us</h1>
-    <p class="sect-desc"></p>
-    <div class="wrapper">
-        <TestimonialCard 
-        v-for="(testimonial, index) in testimonials"
-        :key="index"
-        :title="testimonial.title"
-        :description="testimonial.description"
-        :avatar="testimonial.avatar"
-        :name="testimonial.name"
-        :role="testimonial.role"
-        :img="testimonial.img"
-         />
+    <section>
+        <h1 class="sect-intro">Hear From Those We've Served</h1>
+        <p class="sect-desc">Testimonials from our satisfied clients.</p>
+        <div class="wrapper">
+            <TestimonialCard v-for="(testimonial, index) in testimonials" :key="index" :title="testimonial.title"
+                :description="testimonial.description" :avatar="testimonial.avatar" :name="testimonial.name"
+                :role="testimonial.role" :img="testimonial.img" />
 
-        <div class="btn-wrap">
-            <NuxtLink to="/portfolio" ><button>See all Testimonials</button></NuxtLink>
+            <div class="btn-wrap">
+                <NuxtLink to="/portfolio"><button>See all Testimonials</button></NuxtLink>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 </template>
 
 <script setup>

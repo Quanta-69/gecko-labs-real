@@ -73,11 +73,11 @@ button {
 
 /* Variants */
 .btn-primary {
-    background: linear-gradient(50deg, var(--primary-light), var(--primary-dark));
+    background: linear-gradient(50deg, var(--200), var(--400));
     @apply text-[var(--light-text)];
 }
 .btn-primary:hover{
-    background:linear-gradient(-50deg, var(--primary-light), var(--primary-dark));
+    background:linear-gradient(-50deg, var(--400), var(--200));
     @apply text-[var(--dark-text)]
 }
 

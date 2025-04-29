@@ -1,13 +1,10 @@
 <template>
     <section>
-        <h1 class="sect-intro">Frequently Asked Questions</h1>
-        <p class="sect-desc">Find quick answers to common questions about our SaaS platform.</p>
+        <h1 class="sect-intro">Answers at Your Fingertips</h1>
+        <p class="sect-desc">FAQs to ensure a seamless experience.</p>
         <div class="wrapper">
             <div class="text-content">
-                <FaqCard v-for="(faq, index) in faqs"
-                :key="index"
-                :question="faq.question"
-                :answer="faq.answer" />
+                <FaqCard v-for="(faq, index) in faqs" :key="index" :question="faq.question" :answer="faq.answer" />
             </div>
             <div class="img-content"></div>
         </div>
