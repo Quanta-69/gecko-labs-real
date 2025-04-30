@@ -1,13 +1,17 @@
 <template>
     <section>
-        <h1 class="sect-name"></h1>
-        <p class="sect-intro"></p>
+        <h1 class="sect-intro">Meet our leadership team</h1>
+        <p class="sect-desc">Our Success is driven by these professionals.</p>
         <div class="wrapper">
-            <TeamCard v-for="(team, index) in teams"
-            :key="index"
-            :name="team.name"
-            :role="team.role"
-            :img_url="team.img_url" />
+            <div class="card-wrap">
+                <TeamCard v-for="(team, index) in teams"
+                :key="index"
+                :name="team.name"
+                :role="team.role"
+                :img_url="team.img_url"
+                :insta="team.insta" 
+                :whatsapp="team.whatsapp"/>
+            </div>
         </div>
     </section>
 </template>
@@ -27,4 +31,11 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+section{
+    @apply bg-[var(--600)]
+}
+.card-wrap{
+    @apply border mx-auto
+}
+</style>

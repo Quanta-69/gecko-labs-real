@@ -12,7 +12,6 @@
                 </div>
             </div>
         </div>
-        <div class="img"><img :src=img alt=""></div>
     </div>
 </template>
 
@@ -30,10 +29,11 @@ defineProps({
 <style scoped>
 .card{
     backdrop-filter: blur(10px);
-    @apply flex-col-reverse border gap-0 max-w-[max-content] p-0 border-gray-400 bg-[var(--alpha-white)]
+    border-radius: 30px;
+    @apply flex-row border gap-0 max-w-[max-content] p-0 border-gray-400 bg-[var(--alpha-white)]
 }
 .text-content{
-    @apply max-w-[500px] flex flex-col gap-3 p-4
+    @apply max-w-[400px] flex flex-col gap-3 p-4
 }
 h1{
     @apply text-2xl text-[var(--100)]
@@ -48,8 +48,8 @@ p{
     @apply flex gap-4 items-center
 }
 svg{
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     color: var(--200);
 }
 .avatar{
@@ -62,13 +62,5 @@ svg{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-}
-.img{
-    img{
-        border-radius: 30px;
-        object-fit: cover;
-    }
-    width: 500px;
-    height: 300px;
 }
 </style>

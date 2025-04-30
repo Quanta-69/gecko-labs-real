@@ -6,7 +6,7 @@
             <div class="card-wrap">
                 <TestimonialCard v-for="(testimonial, index) in testimonials" :key="index" :title="testimonial.title"
                     :description="testimonial.description" :avatar="testimonial.avatar" :name="testimonial.name"
-                    :role="testimonial.role" :img="testimonial.img"
+                    :role="testimonial.role" 
                 />
             </div>
             <div class="btn-wrap">
@@ -24,7 +24,8 @@ onMounted(async () => {
         const { data, error } = await supabase
             .from('Testimonials')
             .select('*')
-            .limit(3);
+            .limit(3)
+            .order('created_at', { ascending: false });
         if (error) throw error;
         testimonials.value = data; // Store fetched data in the `testimonials` ref
     } catch (err) {
