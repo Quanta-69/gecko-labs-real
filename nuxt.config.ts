@@ -4,45 +4,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt"],
-
-  shadcn: {
-    /**
-     * Prefix for all the generated components.
-     * @default "U"
-     */
-    componentPrefix: 'G',
-
-    /**
-     * Directory that will be scanned to look for components.
-     * @default "./components/ui"
-     */
-    componentsDir: './components/ui',
-
-    /**
-     * Style layer to use for the components.
-     * @default "base"
-     */
-    style: 'new-york', // Or 'default', 'windy'
-
-    /**
-     * List of components to be included. Accepts glob patterns.
-     * @default []
-     */
-    components: [
-      'Button',
-      'Input',
-      'Card',
-      'Avatar',
-      // Add other components you plan to use
-    ],
-
-    /**
-     * List of utilities to be included. Accepts glob patterns.
-     * @default []
-     */
-    utils: [],
-  },
+  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
 
   app: {
     head: {
@@ -83,8 +45,10 @@ export default defineNuxtConfig({
       ],
     },
   },
-
-  css: ["~/styles/default.css", "~/styles/custom.css"],
+  css: [
+    "~/styles/default.css",
+    "~/styles/custom.css",
+  ],
   routeRules: {
     "/auth/**": { ssr: false }, // Client-side only
   },

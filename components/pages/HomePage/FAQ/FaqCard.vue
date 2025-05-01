@@ -1,12 +1,13 @@
 <template>
-    <details class="accordion">
-        <summary class="accordion-header">{{ question }}</summary>
-        <div class="accordion-body">
-            <p>{{ answer }}</p>
-        </div>
-    </details>
+        <Accordion value="0" class="accordion">
+            <AccordionPanel>
+                <AccordionHeader>{{ question }}</AccordionHeader>
+                <AccordionContent>
+                    <p class="m-0">{{ answer }}</p>
+                </AccordionContent>
+            </AccordionPanel>
+        </Accordion>
 </template>
-
 <script setup>
 defineProps({
     question: String,
@@ -15,9 +16,6 @@ defineProps({
 </script>
 
 <style scoped>
-summary{
-    cursor: pointer;
-}
 .accordion{
     backdrop-filter: blur(10px);
     display:inline-flex;

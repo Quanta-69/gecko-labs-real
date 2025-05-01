@@ -1,9 +1,8 @@
 <template>
-
     <HeroSection />
     <ServicesSection />
     <PortfolioSection />
-    <PSSection/>
+    <PSSection />
     <CTASection />
     <FaqSection />
     <TestimonialsSection />
