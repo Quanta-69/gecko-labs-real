@@ -8,14 +8,40 @@ export default defineNuxtConfig({
 
   shadcn: {
     /**
-     * Prefix for all the imported component
+     * Prefix for all the generated components.
+     * @default "U"
      */
-    prefix: "",
+    componentPrefix: 'G',
+
     /**
-     * Directory that the component lives in.
+     * Directory that will be scanned to look for components.
      * @default "./components/ui"
      */
-    componentDir: "./components/ui",
+    componentsDir: './components/ui',
+
+    /**
+     * Style layer to use for the components.
+     * @default "base"
+     */
+    style: 'new-york', // Or 'default', 'windy'
+
+    /**
+     * List of components to be included. Accepts glob patterns.
+     * @default []
+     */
+    components: [
+      'Button',
+      'Input',
+      'Card',
+      'Avatar',
+      // Add other components you plan to use
+    ],
+
+    /**
+     * List of utilities to be included. Accepts glob patterns.
+     * @default []
+     */
+    utils: [],
   },
 
   app: {
