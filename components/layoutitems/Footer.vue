@@ -33,7 +33,7 @@ footer{
 .wrapper{
     border-image: fill 0 linear-gradient(to right, rgba(0, 0, 0, 0.728), rgba(0, 0, 0, 0.728));
     min-height: inherit;
-    background: url(/assets/svg/footer.svg) no-repeat fixed center/cover;
+    background: url(/assets/svg/footer.svg) no-repeat fixed center/contain;
     @apply flex flex-row h-full justify-between items-center gap-6 px-10
 }
 .logo{
