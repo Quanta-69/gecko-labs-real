@@ -9,25 +9,31 @@ body{
 }
 header, .wrapper, footer{
     max-width: 1500px;
-    @apply w-full mx-auto border
+    @apply w-full mx-auto 
 }
 section{
-    min-height: 40vh;
-    @apply border px-4 py-16 flex flex-col items-start justify-center
+    min-height: 50vh;
+    border-image: fill 0 linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: contain !important;
+    @apply  px-4 py-16 flex flex-col items-start justify-center
 }
 .wrapper{
-    @apply rounded-lg border w-full
+    @apply rounded-lg  w-full
 }
 .card-wrap{
     .card{
         max-width: 330px;
-        @apply  w-full shadow-md rounded-lg p-4 flex flex-col items-start justify-center gap-4
+        border-radius: 30px;
+        @apply  w-full shadow-md p-4 flex flex-col items-start justify-center gap-4
     }
     @apply flex gap-10 items-center justify-center flex-wrap
 }
 
 .sect-intro{
-    @apply mx-auto border text-4xl font-bold mb-1 text-center bg-clip-text text-transparent bg-gradient-to-r from-[var(--100)] to-[var(--200)];
+    @apply mx-auto text-4xl font-bold mb-1 text-center bg-clip-text text-transparent bg-gradient-to-r from-[var(--100)] to-[var(--200)];
 }
 .sect-desc{
     @apply mx-auto font-semibold text-xl italic my-4 text-center

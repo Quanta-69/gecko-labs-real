@@ -36,12 +36,11 @@ onMounted(async () => {
 
 <style scoped>
 section{
-    
+    background: url(/assets/svg/projects.svg);
 }
 .card-wrap{
     @apply flex-nowrap overflow-x-auto
 }
 .btn-wrap{
     @apply my-10
-}
-</style>
+}</style>

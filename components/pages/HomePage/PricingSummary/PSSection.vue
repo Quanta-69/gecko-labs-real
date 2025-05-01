@@ -4,9 +4,14 @@
         <p class="sect-desc">From e-commerce to portfolios, we bring your vision to life.</p>
         <div class="wrapper">
             <div class="card-wrap">
-                <PSCard v-for="(product, index) in products" :key="index" :name="product.name" :tier="product.tier"
-                    :description="product.description" :highlights="product.highlights"
-                    :starting_price="product.starting_price" :cta_text="product.cta_text" :thumbnail="product.thumbnail" />
+                <PSCard v-for="(product, index) in products" :key="index" 
+                    :name="product.name" 
+                    :tier="product.tier"
+                    :description="product.description" 
+                    :highlights="product.highlights"
+                    :starting_price="product.starting_price" 
+                    :cta_text="product.cta_text" 
+                    :thumbnail="product.thumbnail" />
             </div>
             <div class="btn-wrap">
                 <GeckoButton @click="navigateTo('/pricing')" variant="secondary" size="md" text="See All Tiers" icon="ext_link" />
@@ -26,7 +31,7 @@ onMounted(async () => {
             .select('*')
             .limit(3);
         if (error) throw error;
-        products.value = data; // Store fetched data in the `testimonials` ref
+        products.value = data;
     } catch (err) {
         console.error('Error fetching products:', err.message);
     }
@@ -35,7 +40,6 @@ onMounted(async () => {
 
 <style scoped>
 section{
-    background: url(/static/portfolio.jpg) no-repeat fixed center/cover;
-    border-image: fill 0 linear-gradient(to right, rgba(0, 0, 0, 0.721), rgba(0, 0, 0, 0.515));
+    background: url(/assets/svg/offer.svg);
 }
 </style>

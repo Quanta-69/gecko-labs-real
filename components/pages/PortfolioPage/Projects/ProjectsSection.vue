@@ -1,12 +1,14 @@
 <template>
     <section>
-        <h1 class="sect-name">Previous Works</h1>
-        <p class="sect-desc">Our up and running projects.</p>
+        <h1 class="sect-intro">Our Latest Projects</h1>
+        <p class="sect-desc">Our up and running projects</p>
         <div class="wrapper">
-            <PortfolioCard v-for="(project, index) in projects" :key="index" :image="project.image"
-            :title="project.title" 
-            :description="project.description" 
-            :link="project.link" />
+            <div class="card-wrap">
+                <PortfolioCard v-for="(project, index) in projects" :key="index" :image="project.image"
+                :title="project.title"
+                :description="project.description"
+                :link="project.link" />
+            </div>
         </div>
     </section>
 </template>
@@ -20,7 +22,9 @@ onMounted(async () => {
         const { data, error } = await supabase
             .from('Projects')
             .select('*')
-            .limit(3);
+            .limit(3)
+            .order('created_at', { ascending: false })
+            ;
         if (error) throw error;
         projects.value = data; // Store fetched data in the `testimonials` ref
     } catch (err) {
@@ -29,6 +33,8 @@ onMounted(async () => {
 });
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+section{
+    background: url(/assets/svg/projects.svg);
+}
 </style>

@@ -1,6 +1,6 @@
 <template>
     <div class="border">
-        <div class="card">
+        <div class="card" :class=group>
             <div class="text-content">
                 <div class="tag-flex">
                     <h1 class="name">{{ name }}</h1>
@@ -30,6 +30,7 @@ defineProps({
     cta_text: String,
     thumbnail: String,
     link: String,
+    group: String
 })
 </script>
 

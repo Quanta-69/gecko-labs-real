@@ -18,8 +18,7 @@ import services  from '~/data/Services.json';
 
 <style scoped>
 section{
-    background: url(~/static/service.jpg) no-repeat fixed center/cover;
-    border-image: fill 0 linear-gradient(to right, rgba(0, 0, 0, 0.728), rgba(0, 0, 0, 0.517));
+    background: url(/assets/svg/services.svg);
 
 }
 </style>

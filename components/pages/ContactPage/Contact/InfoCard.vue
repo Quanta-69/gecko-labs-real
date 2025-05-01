@@ -15,5 +15,8 @@ defineProps({
 </script>
 
 <style scoped>
-
+.card{
+    backdrop-filter: blur(10px);
+    @apply border bg-[var(--alpha-white)] rounded-lg max-w-[300px] w-full
+}
 </style>

@@ -8,7 +8,7 @@
                 <button>Basic</button>
                 <button>Pro</button>
             </div>
-            <div>
+            <div class="card-wrap" >
                 <PSCard v-for="(product, index) in products" 
                 :key="index" 
                 :name="product.name" 
@@ -17,7 +17,9 @@
                 :highlights="product.highlights"
                 :starting_price="product.starting_price" 
                 :cta_text="product.cta_text"
-                :thumbnail="product.thumbnail"/>
+                :thumbnail="product.thumbnail"
+                :class="product.group"    
+                />
             </div>
         </div>
     </section>
