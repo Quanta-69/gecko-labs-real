@@ -49,7 +49,4 @@ export default defineNuxtConfig({
     "~/styles/default.css",
     "~/styles/custom.css",
   ],
-  routeRules: {
-    "/auth/**": { ssr: false }, // Client-side only
-  },
 });

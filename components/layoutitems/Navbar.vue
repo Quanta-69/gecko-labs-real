@@ -1,6 +1,6 @@
 <template>
-    <header :class="{'scrolled' : scrolled, 'static' : !scrolled}" >
-        <nav class="navbar" >
+    <header :class="{'scrolled' : scrolled, 'static' : !scrolled}">
+        <nav class="navbar">
             <h1>GWL</h1>
             <ul>
                 <li v-for="navlink in navlinks">
@@ -8,11 +8,15 @@
                 </li>
             </ul>
             <div class="btn-wrap">
-                <GeckoButton icon="signup" iconPosition="left" text="Signup" variant="secondary" size="sm" @click="showSignup = true" />
-                <GeckoButton icon="login" iconPosition="left" text="Login" variant="ghost" size="sm" @click="showLogin = true" />
+                <GeckoButton icon="signup" iconPosition="left" text="Signup" variant="secondary" size="sm"
+                    @click="showSignup = true" />
+                <GeckoButton icon="login" iconPosition="left" text="Login" variant="ghost" size="sm"
+                    @click="showLogin = true" />
             </div>
         </nav>
         <LoginModal :isOpen="showLogin" @close="showLogin = false" />
+        <LoginModal v-if="showLoginModal" @close="showLoginModal = false" @login-success="handleAuthSuccess" />
+        <SignupModal v-if="showSignupModal" @close="showSignupModal = false" @signup-success="handleAuthSuccess" />
         <SignUpModal :isOpen="showSignup" @close="showSignup = false" />
     </header>
 </template>
@@ -28,14 +32,13 @@ const scrolled = ref(false)
 const handleScroll = () => {
     scrolled.value = window.scrollY > 500 // Change after 50px scroll
 }
-
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
 })
-
 onBeforeUnmount(() => {
     window.removeEventListener('scroll', handleScroll)
 })
+
 </script>
 
 <style scoped>

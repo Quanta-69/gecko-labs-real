@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/supabase": "^1.5.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@primevue/forms": "^4.3.3",
     "@primevue/nuxt-module": "^4.3.3",
