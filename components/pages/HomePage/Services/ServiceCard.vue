@@ -24,13 +24,13 @@ defineProps({
 .card {
     backdrop-filter: blur(10px);
     background:var(--alpha-white);
-    @apply border border-slate-500
+    @apply border border-[var(--alpha-white)]
 }
 h3{
-    @apply text-2xl 
+    @apply text-xl 
 }
 p{
-    @apply text-gray-300
+    @apply text-[var(--gray-text)]
 }
 .card-svg{
     *{

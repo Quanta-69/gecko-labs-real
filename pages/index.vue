@@ -11,7 +11,13 @@
 
 <script setup lang="ts">
 
-import { FaqSection, PSSection,HeroSection, PortfolioSection, ServicesSection, TestimonialsSection, CTASection } from '~/components/pages/HomePage';
+import { FaqSection, PSSection, HeroSection, PortfolioSection, ServicesSection, TestimonialsSection, CTASection } from '~/components/pages/HomePage';
+
+import { useCustomMeta } from '~/composables/useMeta';
+
+useHead(
+    useCustomMeta("Gecko Web Labs - AI Precision. Human Touch. Perfect Websites")
+);
 </script>
 
 <style scoped>

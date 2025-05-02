@@ -21,7 +21,7 @@
             <label for="agree">I agree to the processing of personal data</label>
         </div>
 
-        <GeckoButton variant="secondary" text="Send message" icon="message" type="submit" />
+        <GeckoButton variant="secondary" text="Send message" icon="message" type="submit" size="md" class="w-full max-w-[450px] mx-auto" />
     </form>
 </template>
 
@@ -32,21 +32,22 @@
 <style scoped>
 .input{
     label{
-        @apply text-[var(--gray-text)]
+        @apply text-[var(--gray-text)] text-left w-full max-w-[450px] mb-2
     }
     input, textarea{
-        outline: 0;
+        outline: 1;
+        outline-color: var(--100);
         backdrop-filter: blur(10px);
-        @apply h-12 w-full max-w-[400px] bg-[var(--alpha-white)] border-[var(--gray-text)] border rounded-lg text-white
+        @apply h-12 ps-2 w-full max-w-[450px] bg-[var(--alpha-white)] rounded-lg text-white border-[var(--alpha-border)] border
     }
     textarea{
         @apply h-[max-content] min-h-20
     }
-    @apply flex flex-col justify-center items-start border py-4
+    @apply flex flex-col justify-center items-center my-8
 }
 
  .agree-wrap {
-     @apply flex-row gap-4 flex items-center justify-start py-4
+     @apply flex-row gap-4 flex items-center justify-center py-4
  }
 #agree {
     @apply h-16 border

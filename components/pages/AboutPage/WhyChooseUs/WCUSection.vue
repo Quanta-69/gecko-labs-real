@@ -1,7 +1,7 @@
 <template>
     <section>
         <h1 class="sect-intro">Why Choose Us?</h1>
-        <p class="sect-desc">We're near perfect at what we do</p>
+        <p class="sect-desc">We're almost perfect at what we do</p>
         <div class="wrapper">
             <p>We’re more than just a tech company—we’re a partner in your journey toward digital excellence. By
                 integrating AI with human intelligence, we help you:</p>

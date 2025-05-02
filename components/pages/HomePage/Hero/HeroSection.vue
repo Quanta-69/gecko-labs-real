@@ -43,9 +43,8 @@ section {
 }
 
 .benefit {
-    backdrop-filter: blur(5px);
-    background: rgba(255, 255, 255, 0.106);
-    @apply flex gap-4 items-center justify-center border border-slate-500 rounded-md px-4 py-1;
+    backdrop-filter: blur(10px);
+    @apply flex gap-4 items-center justify-center border border-[var(--alpha-border)] bg-[var(--alpha-white)] rounded-md px-4 py-1;
 
     .svg {
         @apply w-8 h-8;

@@ -1,5 +1,4 @@
 <template>
-    <div class="border">
         <div class="card" :class=group>
             <div class="text-content">
                 <div class="tag-flex">
@@ -17,7 +16,6 @@
             </div>
             <div class="img"><img :src=thumbnail alt="Offer Image"></div>
         </div>
-    </div>
 </template>
 
 <script setup lang="ts">
@@ -36,9 +34,8 @@ defineProps({
 
 <style scoped>
 .card{
-    background: var(--alpha-white);
     backdrop-filter: blur(10px);
-    @apply max-w-[550px]  flex-row items-center
+    @apply max-w-[550px]  flex-row items-center bg-[var(--alpha-white)] border border-[var(--alpha-border)]
 }
 .text-content{
     @apply flex flex-col justify-center h-full  gap-4

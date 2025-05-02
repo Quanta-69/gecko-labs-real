@@ -1,7 +1,7 @@
 /* Tailwind is allowed */
 
 *{
-    transition: all .3s !important;
+    transition: all .3s ease-in-out;
 }
 body{
     background: black;
@@ -39,5 +39,5 @@ section{
     @apply mx-auto font-semibold text-xl italic my-4 text-center
 }
 .btn-wrap{
-    @apply flex justify-center items-center border gap-8
+    @apply flex justify-center items-center border gap-8 my-10
 }

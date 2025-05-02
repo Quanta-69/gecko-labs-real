@@ -1,6 +1,6 @@
 <template>
     <header :class="{'scrolled' : scrolled, 'static' : !scrolled}" >
-        <nav>
+        <nav class="navbar" >
             <h1>GWL</h1>
             <ul>
                 <li v-for="navlink in navlinks">
@@ -39,15 +39,10 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-.router-link-active{
-    @apply text-[var(--200)];
-}
 .scrolled{
     background-color: rgba(0, 0, 0, 0.5);
     max-width: 100vw;
     backdrop-filter: blur(10px);
-}
-.static{
 }
 
 header{
@@ -57,6 +52,33 @@ header{
 nav{
     @apply flex justify-between items-center
 }
+.navbar a {
+    transition: .15s;
+    @apply p-2 mx-1 px-1 relative inline-flex items-center justify-center
+}
+
+.navbar a::before {
+    content: '';
+    background: linear-gradient(to right, var(--100), var(--200));
+    height: 3px;
+    top: 85%;
+    transition: width .3s ease-in-out;
+    @apply w-0 absolute
+}
+
+.navbar a:hover::before {
+    @apply w-full
+}
+.router-link-active{
+    @apply text-[var(--100)]
+}
+.navbar .router-link-active::before {
+    content: '';
+    background: linear-gradient(to right, var(--100), var(--200));
+    height: 3px;
+    top: 85%;
+    @apply absolute w-full
+}
 ul{
     a{
         @apply font-semibold
@@ -64,6 +86,6 @@ ul{
     @apply flex gap-8 items-center justify-center
 }
 .btn-wrap{
-    @apply gap-4
+    @apply gap-4 my-0
 }
 </style>

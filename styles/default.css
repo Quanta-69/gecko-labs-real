@@ -25,6 +25,7 @@
   --light-bg: #F5F5F5;    /* Neutral Background */
   --dark-bg: #121212;       /* Dark Background (for dark mode) */
   --alpha-white: rgba(255, 255, 255, 0.106);
+  --alpha-border:rgba(255, 255, 255, 0.2);
 
   /* Text Colors */
   --dark-text: #121212;          /* Dark Text */
@@ -73,6 +74,6 @@ html {
     scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
 }
 ::selection{
-  background: var(--300);
+  background:var(--400);
   color: white;
 }

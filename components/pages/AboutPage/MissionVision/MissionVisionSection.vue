@@ -1,7 +1,5 @@
 <template>
     <section>
-        <h1 class="sect-intro">Who we are</h1>
-        <p class="sect-desc">Our brief history lesson</p>
         <div class="wrapper">
             <div class="about-flex">
                 <p>At Gecko Web Labs , we believe in the seamless fusion of human ingenuity and artificial intelligence to create transformative digital experiences. Our mission is to empower businesses and individuals by integrating AI-driven solutions with human creativity, ensuring that technology enhances—not replaces—the unique qualities that make us human.</p>

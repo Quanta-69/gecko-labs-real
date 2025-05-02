@@ -40,7 +40,7 @@ section{
 }
 .card{
     backdrop-filter: blur(10px);
-    @apply border bg-[var(--alpha-white)]
+    @apply border bg-[var(--alpha-white)] border border-[var(--alpha-border)]
 }
 h2{
     span{

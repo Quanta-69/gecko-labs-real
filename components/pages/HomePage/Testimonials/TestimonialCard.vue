@@ -30,7 +30,7 @@ defineProps({
 .card{
     backdrop-filter: blur(10px);
     border-radius: 30px;
-    @apply flex-row border gap-0 max-w-[max-content] p-0 border-gray-400 bg-[var(--alpha-white)]
+    @apply flex-row border gap-0 max-w-[max-content] p-0 border-[var(--alpha-border)] bg-[var(--alpha-white)]
 }
 .text-content{
     @apply max-w-[400px] flex flex-col gap-3 p-4

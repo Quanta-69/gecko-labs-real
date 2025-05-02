@@ -4,7 +4,11 @@
         <p class="sect-desc">still need more information? contact us</p>
         <div class="wrapper">
                 <div class="card-wrap">
-                    <InfoCard v-for="(info, index) in infos" :key="index" :icon="info.icon" :title="info.title" :description="info.description" />
+                    <InfoCard v-for="(info, index) in infos" 
+                    :key="index" 
+                    :svg="info.svg" 
+                    :title="info.title" 
+                    :description="info.description" />
                 </div>
             <div class="form-wrap">
                 <ContactForm/>
@@ -22,14 +26,15 @@ import infos from '~/data/ContactInfo.json'
 <style scoped>
 section{
     min-height: 100vh;
+    background: url(/assets/svg/contact.svg);
 }
 .wrapper{
-    @apply flex border justify-between items-center
+    @apply flex justify-between items-center
 }
 .card-wrap, .form-wrap{
     @apply w-full
 }
 .card-wrap{
-    @apply border justify-center flex flex-row gap-4
+    @apply justify-center flex flex-row gap-4
 }
 </style>
