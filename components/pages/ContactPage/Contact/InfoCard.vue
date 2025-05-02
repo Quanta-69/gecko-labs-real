@@ -1,8 +1,10 @@
 <template>
 <div class="card">
     <div class="svg":v-html=icon></div>
-    <h1>{{ title }}</h1>
-    <p>{{description}}</p>
+    <div class="text-content">
+        <h1>{{ title }}</h1>
+        <p>{{description}}</p>
+    </div>
 </div>
 </template>
 

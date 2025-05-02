@@ -30,6 +30,6 @@ section{
     @apply w-full
 }
 .card-wrap{
-    @apply border justify-start flex flex-row gap-4
+    @apply border justify-center flex flex-row gap-4
 }
 </style>
